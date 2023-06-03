@@ -1,0 +1,25 @@
+﻿<h1>Book your hotels Now</h1>
+@*@{
+	var hotels = ViewData["hotels"] as List<ModelViewController.Models.Booknow>;
+}
+<h1>@ViewData["title"]</h1>*@
+
+@*@{
+	var hotels = ViewBag.hotels;
+}*@
+
+
+@*
+<h1>@ViewBag.name</h1>
+*@
+@model ModelViewController.Models.Booknow
+<table class="table">
+<tr>
+<th>Hotelname</th>
+<th>Amount</th>
+</tr>
+	<tr>
+	<td>@Model.hotelname</td>
+	<td>@Model.amount</td>
+	</tr>
+</table>
